@@ -89,26 +89,26 @@
 
   // http://code.google.com/chrome/extensions/manifest.html#permissions
   "permissions": [
-    "*://*.google.com",
+    //"*://*.google.com",
     "http://hypem.com/*",
     "http://www.hypem.com/*",
-     // Misc: http://goo.gl/CPeqK, XHR: http://goo.gl/U3Vev
-    "bookmarks", // http://code.google.com/chrome/extensions/bookmarks.html
+    // Misc: http://goo.gl/CPeqK, XHR: http://goo.gl/U3Vev
+    // "bookmarks", // http://code.google.com/chrome/extensions/bookmarks.html
     "chrome://favicon/",
-    "clipboardRead", // document.execCommand('paste').
-    "clipboardWrite", // document.execCommand('copy' OR 'cut')
-    "contextMenus", //http:///code.google.com/chrome/extensions/contextMenus.html
-    "cookies", // http://code.google.com/chrome/extensions/cookies.html
+    // "clipboardRead", // document.execCommand('paste').
+    // "clipboardWrite", // document.execCommand('copy' OR 'cut')
+    // "contextMenus", //http:///code.google.com/chrome/extensions/contextMenus.html
+    // "cookies", // http://code.google.com/chrome/extensions/cookies.html
     // "experimental", // http://code.google.com/chrome/extensions/dev/experimental.html
-    "fileBrowserHandler", // http://goo.gl/GqbrP
-    "geolocation", // http://dev.w3.org/geo/api/spec-source.html
-    "history", // http://code.google.com/chrome/extensions/history.html
+    // "fileBrowserHandler", // http://goo.gl/GqbrP
+    // "geolocation", // http://dev.w3.org/geo/api/spec-source.html
+    // "history", // http://code.google.com/chrome/extensions/history.html
     "idle", // http://code.google.com/chrome/extensions/idle.html
     "management", // http://code.google.com/chrome/extensions/management.html
     "notifications", // code.google.com/chrome/extensions/notifications.html
-    "tabs", // http://code.google.com/chrome/extensions/tabs.html +windows.html
-    "tts", // http://code.google.com/chrome/extensions/tts.html
-    "ttsEngine", // http://code.google.com/chrome/extensions/ttsEngine.html
+    // "tabs", // http://code.google.com/chrome/extensions/tabs.html +windows.html
+    // "tts", // http://code.google.com/chrome/extensions/tts.html
+    // "ttsEngine", // http://code.google.com/chrome/extensions/ttsEngine.html
     "unlimitedStorage"
   ],
 
@@ -146,7 +146,6 @@
       "js": ["lib/jquery.min.js", "src/hypernotify.js"]
     }
   ],
-
 
   // http://code.google.com/chrome/extensions/npapi.html
   /*
