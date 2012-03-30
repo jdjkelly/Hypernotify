@@ -1,0 +1,29 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Hypernotify</title>
+
+		<script>
+			// in your background.html
+    chrome.extension.onRequest.addListener(
+  function(request, sender, sendResponse) {
+
+        // Create a simple text notification:
+    var notify = webkitNotifications.createNotification(
+      'icons/hype48.png',  // icon url - can be relative
+      'Now Playing',  // notification title
+      decodeURIComponent(request.msg)  // notification body text
+    );
+
+    notify.show();
+
+    setTimeout(function(){ notify.cancel(); },3000);
+    sendResponse({returnMsg: "All good!"}); // optional response
+  });
+		</script>
+	</head>
+
+	<body>
+
+	</body>
+</html>
